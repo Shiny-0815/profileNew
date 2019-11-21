@@ -1,5 +1,6 @@
 body{
-    background: black;
+    background: white;
+    color: black;
 }
 a{
     text-decoration: none;
@@ -9,9 +10,18 @@ a{
     display: block;
     clear: both;
 }
+.topNavBar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px 0 20px 0;
+}
 .topNavBar>nav{
     float: right;
     font-size: 13px;
+    padding-top: 20px;
+    
 }
 .topNavBar>a{
     float: left;
@@ -29,7 +39,7 @@ a{
     color: rgba(255, 255, 255, 0.7);
     border-bottom: solid 3px transparent;
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 9px;
 }
 .topNavBar>nav>ul>li>a:hover{
     page-break-after: 14px;
@@ -39,12 +49,25 @@ a{
 .topNavBar .logo{
     font-weight: bold;
     font-family: "Hiragino Kaku Gothic Std";
+    padding-top: 24px;
+
 }
 .topNavBar .logo .rs{
     color: #e8676b;
     font-size: 26px;
+    margin-right: 6px;
 }
 .topNavBar .logo .card{
     color: #9A9DA2;
     font-size: 21px;
 }
+.banner{
+    height: 515px;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(./img/rs-cover.jpg);
+}
+.banner .mask {
+    height: 515px;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
