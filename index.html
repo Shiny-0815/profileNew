@@ -7,63 +7,84 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./a.css">
+    <script src="//at.alicdn.com/t/font_1525005_nnp1t4ujmf.js"></script>
+    <style type="text/css">
+        .icon {
+           width: 1em; height: 1em;
+           vertical-align: -0.15em;
+           fill: currentColor;
+           overflow: hidden;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="topNavBar clearfix">
-        <a class="logo" href="#"  alt="logo">
-            <span class="rs">RS</span><span class="card">card</span>
-        </a>
-        <nav>
-            <ul class="clearfix">
-                <li><a href="#">关于</a></li>
-                <li><a href="#">技能</a></li>
-                <li><a href="#">作品</a></li>
-                <li><a href="#">博客</a></li>
-                <li><a href="#">日历</a></li>
-                <li><a href="#">联系方式</a></li>
-                <li><a href="#">其他</a></li>
-            </ul>
-        </nav>
+        <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-weixin"></use>
+        </svg>
+    <div class="topNavBar">
+        <div class="topNavBar-inner clearfix">
+            <a class="logo" href="#" alt="logo">
+                <span class="rs">RS</span><span class="card">card</span>
+            </a>
+            <nav>
+                <ul class="clearfix">
+                    <li><a href="#">关于</a></li>
+                    <li><a href="#">技能</a></li>
+                    <li><a href="#">作品</a></li>
+                    <li><a href="#">博客</a></li>
+                    <li><a href="#">日历</a></li>
+                    <li><a href="#">联系方式</a></li>
+                    <li><a href="#">其他</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
-    <div class="banner"><div class="mask"></div></div>
+    <div class="banner">
+        <div class="mask"></div>
+    </div>
     <main>
-        <div class="card">
-            <div class="pictureAndText">
+        <div class="userCard">
+            <div class="pictureAndText clearfix">
                 <div class="picture">
-                    <img src=“#” alt="头像">
+                    <img src="./img/w.jpg" width="295px" height="343px" alt="头像">
                 </div>
                 <div class="text">
-                    <div class="profile">
-                        <span class="welcome">HELLO</span>
-                        <h1>高荣荣</h1>
-                        <p>前端开发工程师</p>
-                        <dl>
-                            <dt>年龄</dt>
-                            <dd>18</dd>
-                            <dt>所在城市</dt>
-                            <dd>北京</dd>
-                            <dt>邮箱</dt>
-                            <dd>shiny.gao@foxmail.com</dd>
-                            <dt>手机</dt>
-                            <dd>18811358015</dd>
-                        </dl>
-                    </div>
+                    <span class="welcome">HELLO
+                        <span class="triangle"></span>
+                    </span>
+                    <h1>高荣荣</h1>
+                    <p>前端开发工程师</p>
+                    <hr>
+                    <dl class="clearfix">
+                        <dt>年龄</dt>
+                        <dd>18</dd>
+                        <dt>所在城市</dt>
+                        <dd>北京</dd>
+                        <dt>邮箱</dt>
+                        <dd>shiny.gao@foxmail.com</dd>
+                        <dt>手机</dt>
+                        <dd>18811358015</dd>
+                    </dl>
                 </div>
-                <footer class="media">
-                    <a href="#"><img src="#" alt=" "></a>
-                    <a href="#"><img src="#" alt=" "></a>
-                    <a href="#"><img src="#" alt=" "></a>
-                    <a href="#"><img src="#" alt=" "></a>
-                    <a href="#"><img src="#" alt=" "></a>
-                    <a href="#"><img src="#" alt=" "></a>
-                    <a href="#"><img src="#" alt=" "></a>
-                </footer>
             </div>
-            <a class="button" href="#">下载 PDF 简历</a>
-            <p>
-                高荣荣，前端学习者，就读于北京工业大学软件工程系
-            </p>
+            <footer class="media">
+                <a href="#">
+                        <img src="#" alt=" ">
+                </a>
+                <a href="#"><img src="#" alt=" "></a>
+                <a href="#"><img src="#" alt=" "></a>
+                <a href="#"><img src="#" alt=" "></a>
+                <a href="#"><img src="#" alt=" "></a>
+                <a href="#"><img src="#" alt=" "></a>
+                <a href="#"><img src="#" alt=" "></a>
+            </footer>
+        </div>
+        <a class="button" href="#">下载 PDF 简历</a>
+        <p>
+            高荣荣，前端学习者，就读于北京工业大学软件工程系
+        </p>
+        </div>
     </main>
     <section>
         <h2>技能</h2>
@@ -92,4 +113,5 @@
         </div>
     </section>
 </body>
+
 </html>
