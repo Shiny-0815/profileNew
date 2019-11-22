@@ -1,73 +1,56 @@
-body{
-    background: white;
-    color: black;
-}
-a{
-    text-decoration: none;
-}
 .clearfix::after{
     content: '';
     display: block;
     clear: both;
 }
+body{
+    background: black;
+    margin: 0;
+    padding: 0;
+}
 .topNavBar{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: 20px 0 20px 0;
-}
-.topNavBar>nav{
-    float: right;
-    font-size: 13px;
-    padding-top: 20px;
-    
-}
-.topNavBar>a{
-    float: left;
+    padding: 28px 14px 28px 14px;
 }
 .topNavBar>nav>ul{
     list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
 }
 .topNavBar>nav>ul>li{
     float: left;
-    margin-left: 17px;
-    margin-right: 17px;
+    margin-left: 22px;
+    margin-right: 22px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .topNavBar>nav>ul>li>a{
+    text-decoration: none;  
+    font-size: 12px;
     font-weight: bold;
-    color: rgba(255, 255, 255, 0.7);
-    border-bottom: solid 3px transparent;
-    padding-top: 5px;
+    color:rgba(255, 255, 255, 0.7);
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
     padding-bottom: 9px;
+    padding-top: 9px;
+    display: block;
 }
 .topNavBar>nav>ul>li>a:hover{
-    page-break-after: 14px;
-    border-bottom: solid 3px tomato;
-    
+    border-bottom: 3px solid #E8676B;
 }
 .topNavBar .logo{
-    font-weight: bold;
+    float: left;
+    text-decoration: none;
+    font-size: 28px;
     font-family: "Hiragino Kaku Gothic Std";
-    padding-top: 24px;
-
+    font-weight: bold; 
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 .topNavBar .logo .rs{
-    color: #e8676b;
-    font-size: 26px;
     margin-right: 6px;
+    color: #E8676B;
 }
 .topNavBar .logo .card{
     color: #9A9DA2;
-    font-size: 21px;
 }
-.banner{
-    height: 515px;
-    background-position: center center;
-    background-size: cover;
-    background-image: url(./img/rs-cover.jpg);
-}
-.banner .mask {
-    height: 515px;
-    background-color: rgba(0, 0, 0, 0.8);
-  }
