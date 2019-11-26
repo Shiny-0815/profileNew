@@ -326,8 +326,8 @@ body >main .selfIntroduction{
     box-shadow: 0px 0px 5px 0.5px rgba(0,0,0,0.25);
 }
 .portfolio .works .small2{
-    position: absolute;
     top: 298px;
+    position: absolute;
     left: 634px;
     box-shadow: 0px 0px 5px 0.5px rgba(0,0,0,0.25);
 }
