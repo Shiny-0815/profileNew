@@ -29,6 +29,31 @@ img {
     vertical-align: bottom;
     vertical-align: top;
   }
+  .loading{
+    width:200px;height:200px;
+    position: relative;
+  }
+  .loading::before,.loading::after{
+    content:'';
+    width:0px; height:0px; 
+    border-radius:50%;
+    position: absolute;
+    top:0;right: 0;left: 0;bottom:0;
+    margin:auto;
+    background: #888;
+    animation: s 1.3s linear infinite;
+  }
+  .loading::after{
+    animation-delay:0.5s;
+  }
+  @keyframes s{
+    0%{
+      width:0px;height: 0px; opacity:1;
+    }
+    100%{
+      width: 70px;height: 70px; opacity: 0;
+    }
+  }
 .topNavBar{
     padding-top: 28px;
     padding-bottom: 28px;
