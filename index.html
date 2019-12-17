@@ -26,7 +26,7 @@
             height: 100%;
             justify-content: center;
             align-items: center;
-            z-index: 1;
+            z-index: 2;
             background: rgb(236, 234, 234);
         }
 
@@ -47,25 +47,25 @@
             </a>
             <nav class="menu">
                 <ul class="clearfix">
-                    <li><a href="#">关于</a></li>
-                    <li><a href="#">技能</a></li>
-                    <li><a href="#">作品</a>
+                    <li><a href="#siteAbout">关于</a></li>
+                    <li><a href="#siteSkills">技能</a></li>
+                    <li><a href="#siteportfolio">作品</a>
                         <ul class="submenu">
                             <li>作品1</li>
                             <li>作品2</li>
                             <li>作品3</li>
                         </ul>
                     </li>
-                    <li><a href="#">博客</a>
+                    <li><a href="#siteBlog">博客</a>
                         <ul class="submenu">
                             <li>博客1</li>
                             <li>博客2</li>
                             <li>博客3</li>
                         </ul>
                     </li>
-                    <li><a href="#">日历</a></li>
-                    <li><a href="#">联系方式</a></li>
-                    <li><a href="#">其他</a></li>
+                    <li><a href="#siteDate">日历</a></li>
+                    <li><a href="#siteTele">联系方式</a></li>
+                    <li><a href="#siteOther">其他</a></li>
                 </ul>
             </nav>
         </div>
@@ -74,7 +74,7 @@
         <div class="mask"></div>
     </div>
     <main>
-        <div class="userCard">
+        <div class="userCard" id="siteAbout">
             <div class="pictureAndText clearfix">
                 <div class="picture">
                     <img src="./img/w.jpg" width="295px" height="343px" alt="头像">
@@ -134,7 +134,7 @@
         </p>
         </div>
     </main>
-    <section class="skills">
+    <section class="skills" id="siteSkills">
         <h2>技能</h2>
         <ol class="clearfix">
             <li>
@@ -176,7 +176,7 @@
             </li>
         </ol>
     </section>
-    <section class="portfolio ">
+    <section class="portfolio" id="siteportfolio">
         <h2>作品集</h2>
         <nav>
             <ol class="clearfix">

@@ -61,6 +61,7 @@ img {
     width: 100%;
     transition: all 0.5s;
     color:rgba(255, 255, 255, 0.7);
+    z-index: 1;
 }
 .topNavBar.sticky{
     background: white;
