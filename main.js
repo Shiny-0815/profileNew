@@ -42,6 +42,21 @@ for (let i = 0; i < aTags.length; i++) {
         let href = a.getAttribute('href')
         let element = document.querySelector(href)
         let top = element.offsetTop
-        window.scrollTo(0, top - 80)
+
+        let n = 20
+        let t = 500 / n
+        let currentTop = window.scrollY
+        let targetTop = top - 80
+        let S = targetTop - currentTop
+        let s = S / n
+        let i = 0
+        let id = setInterval(() => {
+            if (i === n) {
+                window.clearInterval(id)
+                return
+            }
+            i += 1
+            window.scrollTo(0, currentTop + s * i)
+        }, t);
     }
 }
