@@ -42,21 +42,23 @@ for (let i = 0; i < aTags.length; i++) {
         let href = a.getAttribute('href')
         let element = document.querySelector(href)
         let top = element.offsetTop
-
-        let n = 20
-        let t = 500 / n
         let currentTop = window.scrollY
         let targetTop = top - 80
-        let S = targetTop - currentTop
-        let s = S / n
-        let i = 0
-        let id = setInterval(() => {
-            if (i === n) {
-                window.clearInterval(id)
-                return
-            }
-            i += 1
-            window.scrollTo(0, currentTop + s * i)
-        }, t);
+        let s = targetTop - currentTop
+        function animate(time) {
+            requestAnimationFrame(animate);
+            TWEEN.update(time);
+        }
+        requestAnimationFrame(animate);
+        const coords = { y: currentTop };
+        let t = Math.abs((s / 100) * 300)
+        if (t > 900) { t = 700 }
+        const tween = new TWEEN.Tween(coords)
+            .to({ y: targetTop }, t)
+            .easing(TWEEN.Easing.Quadratic.InOut)
+            .onUpdate(() => {
+                window.scrollTo(0, coords.y)
+            })
+            .start();
     }
 }
