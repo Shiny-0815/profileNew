@@ -185,6 +185,16 @@ transform: translateX(-100%);
 [data-x].active{
     outline: 8px solid red;
 }
+
+[data-x].offset{
+    transform: translateY(80px);
+}
+[data-x]{
+    transform: translateY(0);
+    transition: all .4s;
+}
+
+
 .userCard{
     /* border: 1px solid red; */
     max-width: 930px;

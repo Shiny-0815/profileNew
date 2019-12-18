@@ -2,14 +2,24 @@ setTimeout(function () {
     siteWelcome.classList.remove('active')
 }, 1001);
 
+//为每个含data-x的添加offset类
+let specialTags = document.querySelectorAll('[data-x]')
+for (let i = 0; i < specialTags.length; i++) {
+    specialTags[i].classList.add('offset')
+}
+setTimeout(() => {
+    yyy()
+}, 1000);
 window.onscroll = function (x) {
     if (window.scrollY > 0) {
         topNavBar.classList.add('sticky')
     } else {
         topNavBar.classList.remove('sticky')
     }
-
-//高亮
+    yyy()
+}
+function yyy() {
+    //高亮
     let specialTags = document.querySelectorAll('[data-x]')
     let minIndex = 0
     for (let i = 1; i < specialTags.length; i++) {
@@ -17,12 +27,15 @@ window.onscroll = function (x) {
             minIndex = i
         }
     }
-    for (let i = 0; i < specialTags.length; i++) {
+
+    specialTags[minIndex].classList.remove('offset')
+
+    /*for (let i = 0; i < specialTags.length; i++) {
         specialTags[i].classList.remove('active')
     }
-    specialTags[minIndex].classList.add('active')
-    
-//找导航栏对应部分
+    specialTags[minIndex].classList.add('active')*/
+
+    //找导航栏对应部分
     let id = specialTags[minIndex].id
     let a = document.querySelector('a[href="#' + id + '"]')
     let li = a.parentNode
@@ -31,9 +44,6 @@ window.onscroll = function (x) {
         bortherAndMe[i].classList.remove('highlight')
     }
     li.classList.add('highlight')
-
-
-
 }
 
 /*
