@@ -30,10 +30,7 @@ function yyy() {
 
     specialTags[minIndex].classList.remove('offset')
 
-    /*for (let i = 0; i < specialTags.length; i++) {
-        specialTags[i].classList.remove('active')
-    }
-    specialTags[minIndex].classList.add('active')*/
+   
 
     //找导航栏对应部分
     let id = specialTags[minIndex].id
